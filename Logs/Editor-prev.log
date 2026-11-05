@@ -1,0 +1,574 @@
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 27856)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 30184)
+VBCSCompiler prewarm took 8.93 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/staging' branch; Version is '6000.6.3f1 (45d8eee7de74) revision 4577518'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PABLO AGUIRRE MARTÍN" at "2026-11-03T16:27:48.4862376Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'es' Physical Memory: 32606 MB
+BatchMode: 0, IsHumanControllingUs: 1, StartBugReporterOnCrash: 1, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-03T16:27:48Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 748, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              a34ea8061d3443a3885ef118011b5ac3
+  Correlation Id:          5cd1f7af053663db50a4696f25bfa4da
+  External correlation Id: 362577269220759725
+  Machine Id:              CWCBGrTdsqFLIH/zRSPE+cNaN8U=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-PABLO AGUIRRE MARTÍN" (connect: 0.00s, validation: 0.00s, handshake: 0.02s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PABLO AGUIRRE MARTÍN-notifications" at "2026-11-03T16:27:48.5100351Z"
+[Licensing::Client] Successfully updated the access token
+[Licensing::Module] Successfully updated the access token pjKzI--pGU...
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 6872893821601-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.03s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Unity.exe
+-projectpath
+C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2
+-acceptSoftwareTermsForThisRunOnly
+-useHub
+-hubIPC
+-cloudEnvironment
+production
+-licensingIpc
+LicenseClient-PABLO AGUIRRE MARTÍN
+-hubSessionId
+5a537c81-9968-4492-a0ee-99c5127866ef
+-accessToken
+pjKzI--pGUYrbc57NeT9i1Nxb_cg8SFCGQHm_l8KjO4006f
+Successfully changed project path to: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2
+C:/Users/PABLO AGUIRRE MARTÍN/Desktop/PRIA_Multijugador1/PRIA_Multijugador2
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [24996]  Target information:
+
+Player connection [24996]  * "[IP] 172.16.11.80 [Port] 55505 [Flags] 2 [Guid] 3406594678 [EditorId] 3406594678 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M0H9F53) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [24996] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [24996] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-3496" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Initialising UDS system complete:
+  - System type: Client
+  - Resource namespace: 75cdf883c84d01e1e1bba215c4686348
+  - Shared memory size: 1073741824
+  - Command buffer id: 1052576
+  - Command buffer size: 8192
+  - Hashmap size: 4194304
+  - Service connected: false
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = C:/Users/PABLO AGUIRRE MARTÍN/Desktop/PRIA_Multijugador1/PRIA_Multijugador2Unity Data Store running and initialised
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.6.3f1 (45d8eee7de74)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/PABLO AGUIRRE MARTÍN/Desktop/PRIA_Multijugador1/PRIA_Multijugador2/Assets
+GfxDevice: creating device client; kGfxThreadingModeThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 (ID=0x2882)
+    Vendor:   NVIDIA
+    VRAM:     7957 MB
+    Driver:   32.0.16.1088
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56496
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000975 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.562 seconds
+Domain Reload Profiling: 952ms
+	BeginReloadAssembly (93ms)
+		CreateAndSetChildDomain (9ms)
+	RebuildCommonClasses (4ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (235ms)
+		LoadAssemblies (83ms)
+		TypeCache.Refresh (158ms)
+			TypeCache.ScanAssembly (147ms)
+		AnalyzeDomain (0ms)
+	FinalizeReload (563ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (124ms)
+			ProcessInitializeOnLoadMethodAttributes (174ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 59 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ai.navigation@2.0.16 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.ai.navigation@d0cf77b009bb)
+    com.unity.collab-proxy@2.13.6 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4)
+    com.unity.ide.rider@3.0.38 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.20.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.visualscripting@1.9.12 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.visualscripting@4edfcc09512f)
+    com.unity.searcher@4.9.5 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.searcher@a463122f2c00)
+    com.unity.profiling.core@1.0.3 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.profiling.core@8a49f7027d06)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+  Built-in packages:
+    com.unity.render-pipelines.universal@17.6.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.render-pipelines.universal@327d93d1cbc8)
+    com.unity.test-framework@1.8.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.test-framework@80f691d4262b)
+    com.unity.timeline@6.6.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.timeline@c56d56b0070b)
+    com.unity.ugui@2.6.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.ugui@0727b404f3a0)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+    com.unity.render-pipelines.core@17.6.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.render-pipelines.core@02d75770e4b3)
+    com.unity.shadergraph@17.6.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.shadergraph@1dd0fd24b57e)
+    com.unity.render-pipelines.universal-config@17.6.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.render-pipelines.universal-config@561422b74439)
+    com.unity.graph-authoring@1.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.graph-authoring@cfd2588851ee)
+    com.unity.burst@2.0.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.burst@626e66ab421b)
+    com.unity.collections@6.6.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.collections@10fff0607388)
+    com.unity.test-framework.performance@6.6.0 (location: C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\Library\PackageCache\com.unity.test-framework.performance@b6023decb532)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/PABLO AGUIRRE MARTÍN/Desktop/PRIA_Multijugador1/PRIA_Multijugador2
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll"
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll" in favor of "C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll"
+ExitCode: 4 Duration: 0s170ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+[ 825/1069  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra requires additional run (0.15 seconds), 1 items updated, 824 evaluated
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\DotNetSdk\dotnet.exe "C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: C:/Users/PABLO AGUIRRE MARTÍN/Desktop/PRIA_Multijugador1/PRIA_Multijugador2
+ExitCode: 0 Duration: 0s897ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/PABLO AGUIRRE MARTÍN/Desktop/PRIA_Multijugador1/PRIA_Multijugador2
+ExitCode: 0 Duration: 0s343ms
+Finished compiling graph: 1073 nodes, 21254 flattened edges (18076 ToBuild, 168 ToUse), maximum node priority 1127
+[ 825/1069  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra build success (0.33 seconds), 1 items updated, 1069 evaluated
+AssetDatabase: script compilation time: 1.763934s
+Begin MonoManager ReloadAssembly
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.701 seconds
+Domain Reload Profiling: 1534ms
+	BeginReloadAssembly (282ms)
+		DisableScriptedObjects (18ms)
+		CreateAndSetChildDomain (148ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (489ms)
+		LoadAssemblies (256ms)
+		TypeCache.Refresh (126ms)
+			TypeCache.ScanAssembly (117ms)
+		AnalyzeDomain (65ms)
+			BuildScriptInfoCaches (58ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (702ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (233ms)
+			ProcessInitializeOnLoadMethodAttributes (89ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Starting new worker id: 0 with log in C:/Users/PABLO AGUIRRE MARTÍN/Desktop/PRIA_Multijugador1/PRIA_Multijugador2/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=81dba906be280bc4b8544122965e697a): Total: 3.798 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1074 ms
+		Asset DB Callback time: managed=27 ms, native=15 ms
+		Scripting: domain reloads=1, domain reload time=870 ms, compile time=1765 ms, other=44 ms
+		Project Asset Count: scripts=1492, non-scripts=2566
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 16.891ms
+	ApplyChangesToAssetFolders: 0.590ms
+	Scan: 111.209ms
+	Collect global state as custom dependencies: 15.909ms
+	CategorizeScriptCompilationAssets: 34.795ms
+	ProcessAssetsWithTransientArtifactChanges: 53.515ms
+	CategorizeAssets: 40.649ms
+	CompileScripts: 1765.390ms
+	ImportOutOfDateAssets: 713.236ms (706.811ms without children)
+		UnloadImportedAssets: 0.569ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.431ms
+		ImportSchedulerStart: 5.394ms
+	PostProcessAllAssets: 27.517ms
+		MonoPostProcessAllAssets: 27.468ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 13.160ms
+			SyncVS.PostprocessSyncProject 2.766ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 1.323ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.310ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.645ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.557ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.408ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.216ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.191ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.166ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.119ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.119ms
+	UnloadStreamsBegin: 1.163ms
+	PersistCurrentRevisions: 0.099ms
+	GenerateScriptTypeHashes: 1.413ms
+	GenerateScriptTypeSerializationHashes: 2.656ms
+	Untracked: 1013.623ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Scanning for USB devices : 3.633ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-PRIA_Multijugador2
+Unloading 67 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/SampleScene.unity'
+	Deserialize:            16.322 ms
+	Integration:            39.903 ms
+	Integration of assets:  2.157 ms
+	Thread Wait Time:       0.135 ms
+	Total Operation Time:   58.516 ms
+Unloading 6853 unused Assets / (12.0 MB). Loaded Objects now: 7839.
+Memory consumption went from 433.2 MB to 421.2 MB.
+Total: 9.415500 ms (FindLiveObjects: 1.033400 ms CreateObjectMapping: 0.352200 ms MarkObjects: 4.565300 ms  DeleteObjects: 3.238800 ms)
+
+[LAYOUT] About to load UserSettings\Layouts\default-6000.dwlt, keepMainWindow=False
+[LAYOUT] About to save layout C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\UserSettings\Layouts\default-6000.dwlt
+[LAYOUT] About to save layout C:/Users/PABLO AGUIRRE MARTÍN/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
+[MODES] ModeService[default].InitializeCurrentMode
+[MODES] ModeService[default].RaiseModeChanged(default, default)
+<RI> Initializing input.
+Using Windows.Gaming.Input
+[Project] Loading completed in 7.690 seconds
+	Project init time: 				6.805 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.161 seconds
+		Asset Database init time: 		1.237 seconds
+		Global illumination init time: 	0.002 seconds
+		Assemblies load time: 			0.982 seconds
+		Unity extensions init time: 	0.025 seconds
+		Asset Database refresh time: 	3.799 seconds
+	Scene opening time: 			0.766 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1793723276155,"processId":3496,"projectLoad":7.6896581,"projectInit":6.8052745,"templateInit":0.0,"packageManagerInit":0.1610916,"assetDatabaseInit":1.2372603,"globalIlluminationInit":0.0019197,"assembliesLoad":0.981723,"unityExtensionsInit":0.0248657,"assetDatabaseRefresh":3.7985285,"sceneOpening":0.7657708}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1793723276155,"processId":3496,"editorVersion":"6000.6.3f1 (45d8eee7de74)","branch":"6000.6/staging","buildType":"Release","platform":"Windows"}
+Asset Pipeline Refresh (id=ec1e07a84dc8720408442112b7c64884): Total: 0.050 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Worker ready: AssetImportWorkerHW0 0
+GPU Resident Drawer created.
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Created GICache directory at C:/Users/PABLO AGUIRRE MARTÍN/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.008s, timestamps: [9.984 - 9.992]
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully updated the access token
+[Licensing::Module] Successfully updated access token: "pjKzI--p"... (expires: 2026-11-03T18:25:11Z)
+Starting new worker id: 1 with log in C:/Users/PABLO AGUIRRE MARTÍN/Desktop/PRIA_Multijugador1/PRIA_Multijugador2/Logs/AssetImportWorkerHW1.log
+[Worker0] Imported GUID: 99c9720ab356a0642a771bea13969a05 - Path: Assets/Scenes/SampleScene.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'f9046bc37fb4f1de4b5e58983a68487b') in 0.0556297 seconds
+[Worker0] Imported GUID: 2d2a117bcfa1c5e449503ae9e9d3e721 - Path: Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '6c196517a5a487049c60126691de9987') in 0.0334016 seconds
+[Worker0] Imported GUID: 439fd364bb81a754998b0af9675ad4ab - Path: Assets/Script/ConexionPhoton.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '2819be42b4057e377e478aa61f3c8945') in 0.0127465 seconds
+UPID Received 'cae1ca3c-86a0-4ca9-a21d-8341748bdc3b'.
+[Licensing::Client] Successfully resolved entitlement details
+Worker ready: AssetImportWorkerHW1 1
+GPU Resident Drawer disposed.
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.309 seconds
+Domain Reload Profiling: 1928ms
+	BeginReloadAssembly (396ms)
+		DisableScriptedObjects (62ms)
+		CreateAndSetChildDomain (213ms)
+	RebuildCommonClasses (8ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (162ms)
+		LoadAssemblies (97ms)
+		TypeCache.Refresh (7ms)
+		AnalyzeDomain (20ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1310ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (255ms)
+			ProcessInitializeOnLoadMethodAttributes (95ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (543ms)
+No restricted APIs configured; Validation skipped.
+Checking 20 assemblies for restricted APIs found 0 usage(s) in 3 ms
+
+Asset Pipeline Refresh (id=279f8d4f970213c4eaff145706a232ce): Total: 2.946 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1508 ms
+		Asset DB Callback time: managed=599 ms, native=185 ms
+		Scripting: domain reloads=1, domain reload time=651 ms, compile time=1 ms, other=0 ms
+		Project Asset Count: scripts=1492, non-scripts=2566
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 1.082ms
+	ApplyChangesToAssetFolders: 0.567ms
+	Collect global state as custom dependencies: 1.942ms
+	ProcessAssetsWithTransientArtifactChanges: 122.041ms
+	CategorizeAssets: 40.101ms
+	CompileScripts: 1.405ms
+	ImportOutOfDateAssets: 1316.728ms (1313.947ms without children)
+		CollectScriptTypesHashes: 1.167ms
+		ReloadNativeAssets: 0.855ms
+		UnloadImportedAssets: 1.110ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.443ms
+		ImportSchedulerStart: 0.359ms
+	PostProcessAllAssets: 775.900ms
+		AssemblyValidation.PostprocessAllAssets 16.692ms
+		PostProcessCallbackCreateDeferredMaterials 12.693ms
+		PostprocessAssetsUpdateCachedIcon 10.799ms
+		ShaderAssetModifiedCallback 6.811ms
+		RaytracingShaderImportPostprocess 5.479ms
+		ComputeShaderImportPostprocess 5.043ms
+		SpeedTreeImporter.PostprocessAllAssets 3.942ms
+		LocalizationDatabase.AssetDatabasePostprocessCallback 2.302ms
+		BlockShaderImporter.PostprocessAllAssets 2.254ms
+		XRBuildSystem.XRAssetImported 0.299ms
+		MonoPostProcessAllAssets: 597.344ms
+			SyncVS.PostprocessSyncProject 231.731ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 123.733ms
+			AssetPostprocessor.OnPostprocessAllAssets 66.166ms
+			PostProcessor.OnPostprocessAllAssets 24.707ms
+			MaterialPostprocessor.OnPostprocessAllAssets 21.870ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 21.711ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 21.667ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 13.547ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 10.999ms
+			AssetChangedListener.OnPostprocessAllAssets 9.363ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 4.950ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 3.818ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 3.331ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.284ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 1.195ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.788ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.414ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.377ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.370ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 0.326ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.292ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.249ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.230ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.222ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.204ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.201ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.193ms
+			AssetEvents.OnPostprocessAllAssets 0.159ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.119ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.106ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.102ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.098ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.082ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.064ms
+	PostAssetChangesProfiler: 8.551ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.172ms
+	UnloadStreamsBegin: 1.050ms
+	PersistCurrentRevisions: 0.101ms
+	GenerateScriptTypeHashes: 2.928ms
+	GenerateScriptTypeSerializationHashes: 5.162ms
+	Untracked: 672.122ms
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.248 ms
+	Integration:            291.653 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.012 ms
+	Total Operation Time:   292.914 ms
+ConnectUsingSettings() failed. Can only connect while in state 'Disconnected'. Current state: Connecting
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Photon.Pun.PhotonNetwork:ConnectUsingSettings (Photon.Realtime.AppSettings,bool) (at Assets/Photon/PhotonUnityNetworking/Code/PhotonNetwork.cs:1133)
+Photon.Pun.PhotonNetwork:ConnectUsingSettings () (at Assets/Photon/PhotonUnityNetworking/Code/PhotonNetwork.cs:1126)
+ConexionPhoton:Start () (at Assets/Script/ConexionPhoton.cs:20)
+
+(Filename: Assets/Photon/PhotonUnityNetworking/Code/PhotonNetwork.cs Line: 1133)
+
+GPU Resident Drawer created.
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Conectado al Master Server. Región: eu
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ConexionPhoton:OnConnectedToMaster () (at Assets/Script/ConexionPhoton.cs:30)
+Photon.Realtime.ConnectionCallbacksContainer:OnConnectedToMaster () (at Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs:4384)
+Photon.Realtime.LoadBalancingClient:OnOperationResponse (ExitGames.Client.Photon.OperationResponse) (at Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs:2953)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback (ExitGames.Client.Photon.StreamBuffer) (at D:/Dev/photon-sdk-dotnet-v4/PhotonDotNet/PeerBase.cs:877)
+ExitGames.Client.Photon.TPeer:DispatchIncomingCommands () (at D:/Dev/photon-sdk-dotnet-v4/PhotonDotNet/TPeer.cs:277)
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands () (at D:/Dev/photon-sdk-dotnet-v4/PhotonDotNet/PhotonPeer.cs:1820)
+Photon.Pun.PhotonHandler:Dispatch () (at Assets/Photon/PhotonUnityNetworking/Code/PhotonHandler.cs:243)
+Photon.Pun.PhotonHandler:FixedUpdate () (at Assets/Photon/PhotonUnityNetworking/Code/PhotonHandler.cs:163)
+
+(Filename: Assets/Script/ConexionPhoton.cs Line: 30)
+
+GPU Resident Drawer disposed.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.848 ms
+	Integration:            12.278 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.009 ms
+	Total Operation Time:   13.136 ms
+Unloading 6171 unused Assets / (19.3 MB). Loaded Objects now: 8823.
+Memory consumption went from 0.64 GB to 0.62 GB.
+Total: 18.552600 ms (FindLiveObjects: 0.807200 ms CreateObjectMapping: 0.288500 ms MarkObjects: 14.020100 ms  DeleteObjects: 3.198200 ms)
+
+GPU Resident Drawer created.
+MonoPathRemapper: Attempts to remap: 40851; Successful remaps: 19084
+Serialized file version minimum: 23, current 23
+[LAYOUT] About to save layout C:\Users\PABLO AGUIRRE MARTÍN\Desktop\PRIA_Multijugador1\PRIA_Multijugador2\UserSettings\Layouts\default-6000.dwlt
+[LAYOUT] About to save layout C:/Users/PABLO AGUIRRE MARTÍN/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
+Importing 'GUID: 00000000000000009000000000000000 - Path: ProjectSettings/QualitySettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000009000000000000000' -> (Import Result ID: '8151b601d05d3e12de314c2aa1f82962') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=2a108b3da874f726c62fbe5f12be4a8a DependenciesID=6180c49ef29638684367d2893c04e070 StaticDependenciesID=5b19720d9149525484b40148944c8e26 
+Asset Pipeline Refresh (id=ecc4bfc1162007843974766a8ecfa930): Total: 0.019 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+GPU Resident Drawer disposed.
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+[Licensing::IpcConnector] LicenseClient-PABLO AGUIRRE MARTÍN-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-PABLO AGUIRRE MARTÍN channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+Shut down UDS service system complete
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+abort_threads: Failed aborting id: 00000000000017C4, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000001310, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 00000000000017C4, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000001310, mono_thread_manage will ignore it
+
+debugger-agent: Unable to listen on 4444
+VBCSCompilerPreWarmer: requested VBCSCompiler shutdown
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1793723310225,"processId":3496,"allocatedMemory":18106369,"memoryLabels":[{"Default":219122},{"Permanent":15516},{"NewDelete":73709},{"Thread":4197984},{"Manager":2341661},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":858905},{"Material":68},{"GfxDevice":55968},{"Animation":952},{"Audio":32},{"FreeType":8},{"FontEngine":736},{"Physics":1970},{"Physics2D":16},{"Serialization":17440},{"Input":45280},{"JobScheduler":256},{"TextLib":33508},{"Mono":48},{"MonoCode":128},{"ScriptingNativeRuntime":1357880},{"BaseObject":48848},{"Resource":1252},{"Renderer":2384},{"Transform":4685},{"File":25211},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":722015},{"StaticString":3808},{"Utility":2676058},{"PoolAlloc":2840},{"AI":80},{"TypeTree":14869},{"ScriptManager":18984},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":8448},{"WebRequest":11270},{"VR":49650},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"NativeArray":1080},{"Camera":729},{"Secure":265},{"SerializationCache":9256},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":768},{"Hierarchy":1188},{"UIElements":40},{"CoreStats":14456},{"Identifiers":7152},{"Gui":267},{"EditorUtility":148778},{"VersionControl":8},{"Undo":931},{"AssetDatabase":4668773},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":37040},{"Upm":1988},{"UpmDiagnostics":8},{"AssetCompliance":96},{"DrivenProperties":72},{"LocalIPC":292},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3606},{"Windowing":456},{"Licensing":12857},{"AssetReference":32},{"IPCStream":32}]}

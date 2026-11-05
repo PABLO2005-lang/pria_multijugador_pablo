@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PABLO AGUIRRE MART\u00CDN\\Desktop\\PRIA_Multijugador1\\PRIA_Multijugador2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\pablo aguirre mart\u00EDn\\desktop\\pria_multijugador1\\pria_multijugador2\\assets\\script\\conexionphoton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\conexionphoton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConexionPhoton.cs",
+              "DocumentMoniker": "C:\\Users\\PABLO AGUIRRE MART\u00CDN\\Desktop\\PRIA_Multijugador1\\PRIA_Multijugador2\\Assets\\Script\\ConexionPhoton.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ConexionPhoton.cs",
+              "ToolTip": "C:\\Users\\PABLO AGUIRRE MART\u00CDN\\Desktop\\PRIA_Multijugador1\\PRIA_Multijugador2\\Assets\\Script\\ConexionPhoton.cs",
+              "RelativeToolTip": "Assets\\Script\\ConexionPhoton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T15:17:49.102Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
