@@ -1,11 +1,22 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.6/staging' branch; Version is '6000.6.3f1 (45d8eee7de74) revision 4577518'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PABLO AGUIRRE MARTÍN" at "2026-11-10T15:04:18.5336257Z"
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'es' Physical Memory: 32606 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PABLO AGUIRRE MARTÍN" at "2026-11-09T15:15:09.5177189Z"
 System  architecture: x64
 Process architecture: x64
-Date: 2026-11-09T15:15:09Z
+Date: 2026-11-10T15:04:18Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 27084, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              6d1f427e8bda459dab1f9778a3726cb8
+  Correlation Id:          77ba420c8508389e2ba01aee8bc93d36
+  External correlation Id: 3466557113565751132
+  Machine Id:              CWCBGrTdsqFLIH/zRSPE+cNaN8U=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-PABLO AGUIRRE MARTÍN" (connect: 0.00s, validation: 0.00s, handshake: 0.02s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PABLO AGUIRRE MARTÍN-notifications" at "2026-11-10T15:04:18.5581208Z"
+[Licensing::Module] Licensing Background thread has ended after 0.02s
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Unity.exe
@@ -19,9 +30,9 @@ C:/Users/PABLO AGUIRRE MARTÍN/Desktop/PRIA_Multijugador1/PRIA_Multijugador2
 -logFile
 Logs/AssetImportWorkerHW1.log
 -srvPort
-60221
+53292
 -parentPid
-24916
+32796
 -analyticsCloudUserId
 6872893821601
 -analyticsCloudProjectId
@@ -85,27 +96,16 @@ C:/Users/PABLO AGUIRRE MARTÍN/Desktop/PRIA_Multijugador1/PRIA_Multijugador2
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [17784]  Target information:
+Player connection [39792]  Target information:
 
-Player connection [17784]  * "[IP] 172.16.11.80 [Port] 0 [Flags] 2 [Guid] 266485722 [EditorId] 266485722 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M0H9F53) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [39792]  * "[IP] 172.16.11.80 [Port] 0 [Flags] 2 [Guid] 1864885886 [EditorId] 1864885886 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M0H9F53) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [17784] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [17784] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [39792] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [39792] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 11
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 28540, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
-[Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.3+d7ffd15
-  Session Id:              bbd791c359d0486daf6a8b1679fc0b48
-  Correlation Id:          4d35bb66de12fd92b74b805adc242e77
-  External correlation Id: 5094865426438107088
-  Machine Id:              CWCBGrTdsqFLIH/zRSPE+cNaN8U=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-PABLO AGUIRRE MARTÍN" (connect: 0.00s, validation: 0.00s, handshake: 0.12s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PABLO AGUIRRE MARTÍN-notifications" at "2026-11-09T15:15:09.6345189Z"
-[Licensing::Module] Licensing Background thread has ended after 0.12s
 Library Redirect Path: Library/
 Initialising UDS system complete:
   - System type: Client
@@ -116,7 +116,9 @@ Initialising UDS system complete:
   - Hashmap size: 4194304
   - Service connected: true
   - Service working directory: Library/DataStore/
-Refreshing native plugins compatible for Editor in 2.38 ms, found 4 plugins.
+Active build profile path: `Assets/Settings/Build Profiles/Windows.asset`
+Got setting from build profile YAML, name `m_BuildTarget`, value `19`
+Got setting from build profile YAML, name `m_Subtarget`, value `2`
 [Physics::Module] Selected backend (deferred post-plugins).
 [Physics::Module] Name: PhysX
 [Physics::Module] Id: 0xf2b8ea05
@@ -142,7 +144,7 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/Managed
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
 Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56052
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -154,7 +156,7 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.3f1/E
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.002562 seconds.
+Registered in 0.002150 seconds.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
@@ -163,28 +165,29 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.333 seconds
-Domain Reload Profiling: 714ms
-	BeginReloadAssembly (84ms)
+- Finished resetting the current domain, in  0.343 seconds
+Domain Reload Profiling: 742ms
+	BeginReloadAssembly (89ms)
 	RebuildCommonClasses (4ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (236ms)
-		LoadAssemblies (82ms)
-		TypeCache.Refresh (162ms)
-			TypeCache.ScanAssembly (151ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (249ms)
+		LoadAssemblies (87ms)
+		TypeCache.Refresh (172ms)
+			TypeCache.ScanAssembly (161ms)
 		AnalyzeDomain (0ms)
-	FinalizeReload (334ms)
+	FinalizeReload (344ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (70ms)
-			ProcessInitializeOnLoadMethodAttributes (117ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (71ms)
+			ProcessInitializeOnLoadMethodAttributes (122ms)
 Initializing Unity extensions:
 [Licensing::Client] Successfully resolved entitlement details
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
+Got setting from build profile YAML, name `m_Development`, value `0`
 Begin MonoManager ReloadAssembly
 'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
@@ -198,513 +201,85 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.551 seconds
-Domain Reload Profiling: 1230ms
-	BeginReloadAssembly (154ms)
-		DisableScriptedObjects (7ms)
+- Finished resetting the current domain, in  0.556 seconds
+Domain Reload Profiling: 1260ms
+	BeginReloadAssembly (163ms)
+		DisableScriptedObjects (14ms)
 		CreateAndSetChildDomain (22ms)
 	RebuildCommonClasses (6ms)
-	RebuildNativeTypeToScriptingClass (11ms)
+	RebuildNativeTypeToScriptingClass (12ms)
 	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (469ms)
-		LoadAssemblies (244ms)
-		TypeCache.Refresh (128ms)
-			TypeCache.ScanAssembly (115ms)
-		AnalyzeDomain (62ms)
-			BuildScriptInfoCaches (57ms)
+	LoadAllAssembliesAndSetupDomain (483ms)
+		LoadAssemblies (247ms)
+		TypeCache.Refresh (130ms)
+			TypeCache.ScanAssembly (116ms)
+		AnalyzeDomain (65ms)
+			BuildScriptInfoCaches (60ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (552ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (79ms)
-			ProcessInitializeOnLoadAttributes (195ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
-			AfterProcessingInitializeOnLoad (3ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-AcceleratorClientConnectionCallback - disconnected - :0
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Unloading 63 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (9.9 MB). Loaded Objects now: 7695.
-Memory consumption went from 345.8 MB to 335.9 MB.
-Total: 6.355000 ms (FindLiveObjects: 0.504200 ms CreateObjectMapping: 0.252400 ms MarkObjects: 3.609800 ms  DeleteObjects: 1.787600 ms)
-
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Unloading 62 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6828 unused Assets / (9.4 MB). Loaded Objects now: 7696.
-Memory consumption went from 342.9 MB to 333.5 MB.
-Total: 7.628600 ms (FindLiveObjects: 1.168200 ms CreateObjectMapping: 0.354900 ms MarkObjects: 3.706500 ms  DeleteObjects: 2.186900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Unloading 62 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6828 unused Assets / (9.1 MB). Loaded Objects now: 7696.
-Memory consumption went from 344.9 MB to 335.7 MB.
-Total: 6.928500 ms (FindLiveObjects: 0.620400 ms CreateObjectMapping: 0.263400 ms MarkObjects: 3.979000 ms  DeleteObjects: 1.860200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Unloading 62 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6828 unused Assets / (9.1 MB). Loaded Objects now: 7696.
-Memory consumption went from 346.8 MB to 337.7 MB.
-Total: 7.566900 ms (FindLiveObjects: 0.564300 ms CreateObjectMapping: 0.255900 ms MarkObjects: 4.759300 ms  DeleteObjects: 1.773100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time of request: 2026-11-09T15:26:48.4207477Z
-  Time since last request: 1822248.96868519997224 seconds.
-  importAddress: GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: PreviewImporter
-Importing 'GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: PreviewImporter' with importer (PreviewImporter)
-Imported 'GUID: ac2080d5af172c543bafab32b70fc7cb' -> (Import Result ID: '96d5563adfa6a15f57831d737e027e85') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7292e8a90d9a0d9687cfead669e72912 DependenciesID=47f97e15a476e86596e56fc32bdb5b45 StaticDependenciesID=f76125e6b9cdca932abbbc1a3d512463 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Unloading 62 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6828 unused Assets / (9.1 MB). Loaded Objects now: 7698.
-Memory consumption went from 349.6 MB to 340.5 MB.
-Total: 6.566000 ms (FindLiveObjects: 0.884200 ms CreateObjectMapping: 0.246000 ms MarkObjects: 3.464400 ms  DeleteObjects: 1.757400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time of request: 2026-11-09T15:27:03.1504898Z
-  Time since last request: 14.7164198 seconds.
-  importAddress: GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: PreviewImporter
-Importing 'GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: PreviewImporter' with importer (PreviewImporter)
-Imported 'GUID: ac2080d5af172c543bafab32b70fc7cb' -> (Import Result ID: '4d1f35ac9e50a8d0c457f8b05540b40d') in 0.003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7292e8a90d9a0d9687cfead669e72912 DependenciesID=e083769f9674ec1a9d722836449858af StaticDependenciesID=375db1ea21fe914e00915029c3145b94 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.581 seconds
-Domain Reload Profiling: 1262ms
-	BeginReloadAssembly (183ms)
-		DisableScriptedObjects (6ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (434ms)
-		LoadAssemblies (251ms)
-		TypeCache.Refresh (9ms)
-		AnalyzeDomain (136ms)
-			BuildScriptInfoCaches (131ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (582ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (189ms)
-			ProcessInitializeOnLoadMethodAttributes (69ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6839 unused Assets / (9.1 MB). Loaded Objects now: 7749.
-Memory consumption went from 360.3 MB to 351.2 MB.
-Total: 6.170500 ms (FindLiveObjects: 0.603300 ms CreateObjectMapping: 0.189000 ms MarkObjects: 3.376400 ms  DeleteObjects: 1.795900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 61 unused Assets / (5.6 MB). Loaded Objects now: 7749.
-Memory consumption went from 357.6 MB to 352.0 MB.
-Total: 6.977200 ms (FindLiveObjects: 0.680300 ms CreateObjectMapping: 0.129900 ms MarkObjects: 4.928900 ms  DeleteObjects: 1.015700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.515 seconds
-Domain Reload Profiling: 1061ms
-	BeginReloadAssembly (183ms)
-		DisableScriptedObjects (7ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (300ms)
-		LoadAssemblies (248ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (516ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (74ms)
-			ProcessInitializeOnLoadAttributes (179ms)
-			ProcessInitializeOnLoadMethodAttributes (70ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6839 unused Assets / (8.5 MB). Loaded Objects now: 7752.
-Memory consumption went from 366.7 MB to 358.3 MB.
-Total: 6.879600 ms (FindLiveObjects: 0.800400 ms CreateObjectMapping: 0.259100 ms MarkObjects: 3.861900 ms  DeleteObjects: 1.741800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 61 unused Assets / (5.4 MB). Loaded Objects now: 7752.
-Memory consumption went from 364.0 MB to 358.5 MB.
-Total: 6.610300 ms (FindLiveObjects: 1.019100 ms CreateObjectMapping: 0.172900 ms MarkObjects: 4.105700 ms  DeleteObjects: 1.075700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Active build profile path: `Assets/Settings/Build Profiles/Windows.asset`
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 61 unused Assets / (5.6 MB). Loaded Objects now: 7752.
-Memory consumption went from 365.9 MB to 360.3 MB.
-Total: 6.654600 ms (FindLiveObjects: 0.802200 ms CreateObjectMapping: 0.160600 ms MarkObjects: 4.387900 ms  DeleteObjects: 1.069600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 61 unused Assets / (5.4 MB). Loaded Objects now: 7752.
-Memory consumption went from 367.9 MB to 362.5 MB.
-Total: 6.176600 ms (FindLiveObjects: 0.388200 ms CreateObjectMapping: 0.484000 ms MarkObjects: 4.104000 ms  DeleteObjects: 0.982500 ms)
-
-Prepare: number of updated asset objects reloaded= 1
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 61 unused Assets / (5.6 MB). Loaded Objects now: 7752.
-Memory consumption went from 370.0 MB to 364.4 MB.
-Total: 6.821600 ms (FindLiveObjects: 0.945000 ms CreateObjectMapping: 0.178100 ms MarkObjects: 4.196800 ms  DeleteObjects: 1.286300 ms)
-
-Prepare: number of updated asset objects reloaded= 21
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Got setting from build profile YAML, name `m_Development`, value `0`
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.525 seconds
-Domain Reload Profiling: 1074ms
-	BeginReloadAssembly (183ms)
-		DisableScriptedObjects (14ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (301ms)
-		LoadAssemblies (252ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (526ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (182ms)
-			ProcessInitializeOnLoadMethodAttributes (70ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.4 MB). Loaded Objects now: 7761.
-Memory consumption went from 376.9 MB to 368.5 MB.
-Total: 6.361400 ms (FindLiveObjects: 0.514200 ms CreateObjectMapping: 0.262100 ms MarkObjects: 3.649900 ms  DeleteObjects: 1.727600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.4 MB). Loaded Objects now: 7761.
-Memory consumption went from 374.1 MB to 368.7 MB.
-Total: 5.903500 ms (FindLiveObjects: 0.390400 ms CreateObjectMapping: 0.126500 ms MarkObjects: 4.056700 ms  DeleteObjects: 1.102400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7761.
-Memory consumption went from 376.1 MB to 370.5 MB.
-Total: 5.360800 ms (FindLiveObjects: 0.627400 ms CreateObjectMapping: 0.107100 ms MarkObjects: 3.442700 ms  DeleteObjects: 0.980300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7761.
-Memory consumption went from 378.0 MB to 372.4 MB.
-Total: 6.059400 ms (FindLiveObjects: 0.814600 ms CreateObjectMapping: 0.149400 ms MarkObjects: 3.654900 ms  DeleteObjects: 1.208500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.533 seconds
-Domain Reload Profiling: 1097ms
-	BeginReloadAssembly (190ms)
-		DisableScriptedObjects (16ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (309ms)
-		LoadAssemblies (257ms)
-		TypeCache.Refresh (8ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (534ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (185ms)
-			ProcessInitializeOnLoadMethodAttributes (69ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (9.4 MB). Loaded Objects now: 7764.
-Memory consumption went from 384.9 MB to 375.4 MB.
-Total: 7.313900 ms (FindLiveObjects: 1.210200 ms CreateObjectMapping: 0.364300 ms MarkObjects: 3.567300 ms  DeleteObjects: 1.959600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.534 seconds
-Domain Reload Profiling: 1075ms
-	BeginReloadAssembly (187ms)
-		DisableScriptedObjects (16ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (290ms)
-		LoadAssemblies (239ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (535ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (184ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.3 MB). Loaded Objects now: 7767.
-Memory consumption went from 386.9 MB to 378.6 MB.
-Total: 7.409200 ms (FindLiveObjects: 1.203500 ms CreateObjectMapping: 0.353100 ms MarkObjects: 3.818000 ms  DeleteObjects: 1.815300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7767.
-Memory consumption went from 384.1 MB to 378.5 MB.
-Total: 5.906500 ms (FindLiveObjects: 0.380700 ms CreateObjectMapping: 0.145200 ms MarkObjects: 3.889100 ms  DeleteObjects: 1.250200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7767.
-Memory consumption went from 386.1 MB to 380.5 MB.
-Total: 5.118500 ms (FindLiveObjects: 0.361400 ms CreateObjectMapping: 0.103700 ms MarkObjects: 3.460500 ms  DeleteObjects: 0.987800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7767.
-Memory consumption went from 388.1 MB to 382.5 MB.
-Total: 5.854400 ms (FindLiveObjects: 0.506900 ms CreateObjectMapping: 0.109900 ms MarkObjects: 3.877500 ms  DeleteObjects: 1.123400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.4 MB). Loaded Objects now: 7767.
-Memory consumption went from 390.0 MB to 384.6 MB.
-Total: 5.956600 ms (FindLiveObjects: 0.402700 ms CreateObjectMapping: 0.104300 ms MarkObjects: 4.196300 ms  DeleteObjects: 1.050900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7767.
-Memory consumption went from 392.0 MB to 386.4 MB.
-Total: 5.318100 ms (FindLiveObjects: 0.387300 ms CreateObjectMapping: 0.096100 ms MarkObjects: 3.481700 ms  DeleteObjects: 1.147400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.538 seconds
-Domain Reload Profiling: 1083ms
-	BeginReloadAssembly (188ms)
-		DisableScriptedObjects (17ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (8ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (294ms)
-		LoadAssemblies (242ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (539ms)
+	FinalizeReload (557ms)
 		SetupLoadedEditorAssemblies (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
 			BeforeProcessingInitializeOnLoad (78ms)
-			ProcessInitializeOnLoadAttributes (187ms)
-			ProcessInitializeOnLoadMethodAttributes (69ms)
+			ProcessInitializeOnLoadAttributes (195ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
 			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.2 MB). Loaded Objects now: 7770.
-Memory consumption went from 400.6 MB to 392.5 MB.
-Total: 7.070600 ms (FindLiveObjects: 1.173700 ms CreateObjectMapping: 0.333000 ms MarkObjects: 3.627300 ms  DeleteObjects: 1.727400 ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+AcceleratorClientConnectionCallback - disconnected - :0
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Unloading 63 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6844 unused Assets / (10.3 MB). Loaded Objects now: 7702.
+Memory consumption went from 348.3 MB to 338.0 MB.
+Total: 7.064600 ms (FindLiveObjects: 1.203800 ms CreateObjectMapping: 0.335300 ms MarkObjects: 3.500900 ms  DeleteObjects: 1.815300 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
 AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.5 MB). Loaded Objects now: 7770.
-Memory consumption went from 397.9 MB to 392.4 MB.
-Total: 7.380800 ms (FindLiveObjects: 0.878700 ms CreateObjectMapping: 0.165700 ms MarkObjects: 4.903800 ms  DeleteObjects: 1.184100 ms)
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Unloading 62 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6828 unused Assets / (8.7 MB). Loaded Objects now: 7702.
+Memory consumption went from 345.2 MB to 336.5 MB.
+Total: 8.097100 ms (FindLiveObjects: 1.243900 ms CreateObjectMapping: 0.253600 ms MarkObjects: 4.630300 ms  DeleteObjects: 1.750500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.5 MB). Loaded Objects now: 7770.
-Memory consumption went from 399.9 MB to 394.4 MB.
-Total: 5.266300 ms (FindLiveObjects: 0.368700 ms CreateObjectMapping: 0.104300 ms MarkObjects: 3.569200 ms  DeleteObjects: 1.017500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
+Received Import Request.
+  Time of request: 2026-11-10T15:21:22.8551455Z
+  Time since last request: 1908324.99405049998313 seconds.
+  importAddress: GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: PreviewImporter
+Importing 'GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: ac2080d5af172c543bafab32b70fc7cb' -> (Import Result ID: 'dfd861e029197101ce9d6a38d312a1ae') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7292e8a90d9a0d9687cfead669e72912 DependenciesID=71699eafb3491056d52faf783efa8232 StaticDependenciesID=084ee04b0cac05dbdf2a43ea5a41af34 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7770.
-Memory consumption went from 401.8 MB to 396.2 MB.
-Total: 6.411300 ms (FindLiveObjects: 0.813700 ms CreateObjectMapping: 0.154200 ms MarkObjects: 3.820200 ms  DeleteObjects: 1.349300 ms)
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Unloading 62 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6829 unused Assets / (8.4 MB). Loaded Objects now: 7704.
+Memory consumption went from 348.0 MB to 339.7 MB.
+Total: 6.679200 ms (FindLiveObjects: 0.543800 ms CreateObjectMapping: 0.250800 ms MarkObjects: 3.950300 ms  DeleteObjects: 1.720400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-10T15:23:06.9271825Z
+  Time since last request: 104.0397155 seconds.
+  importAddress: GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: PreviewImporter
+Importing 'GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: ac2080d5af172c543bafab32b70fc7cb' -> (Import Result ID: 'ba6c4d48e698705a6b8877b9b202c269') in 0.002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7292e8a90d9a0d9687cfead669e72912 DependenciesID=4fb46faeba67ac28b543cef8f98a07b5 StaticDependenciesID=13cc97ddc5305ee96776ec1de3c6df57 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Unloading 62 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6829 unused Assets / (8.2 MB). Loaded Objects now: 7704.
+Memory consumption went from 348.0 MB to 339.9 MB.
+Total: 7.328100 ms (FindLiveObjects: 0.551800 ms CreateObjectMapping: 0.256100 ms MarkObjects: 4.637800 ms  DeleteObjects: 1.663400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
@@ -725,84 +300,50 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.534 seconds
-Domain Reload Profiling: 1090ms
-	BeginReloadAssembly (190ms)
-		DisableScriptedObjects (16ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (303ms)
-		LoadAssemblies (251ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (534ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (75ms)
-			ProcessInitializeOnLoadAttributes (185ms)
-			ProcessInitializeOnLoadMethodAttributes (69ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.3 MB). Loaded Objects now: 7773.
-Memory consumption went from 411.4 MB to 403.1 MB.
-Total: 6.620700 ms (FindLiveObjects: 0.549400 ms CreateObjectMapping: 0.259900 ms MarkObjects: 3.649600 ms  DeleteObjects: 1.929400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.531 seconds
-Domain Reload Profiling: 1067ms
+- Finished resetting the current domain, in  0.596 seconds
+Domain Reload Profiling: 1159ms
 	BeginReloadAssembly (189ms)
 		DisableScriptedObjects (16ms)
 		CreateAndSetChildDomain (38ms)
 	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (285ms)
-		LoadAssemblies (233ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (311ms)
+		LoadAssemblies (254ms)
 		TypeCache.Refresh (6ms)
 		AnalyzeDomain (6ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (532ms)
+	FinalizeReload (597ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (75ms)
-			ProcessInitializeOnLoadAttributes (188ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			BeforeProcessingInitializeOnLoad (78ms)
+			ProcessInitializeOnLoadAttributes (187ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
 			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
 Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.8 MB). Loaded Objects now: 7776.
-Memory consumption went from 415.8 MB to 407.0 MB.
-Total: 6.159900 ms (FindLiveObjects: 0.474900 ms CreateObjectMapping: 0.237700 ms MarkObjects: 3.490700 ms  DeleteObjects: 1.750700 ms)
+Unloading 6841 unused Assets / (9.2 MB). Loaded Objects now: 7755.
+Memory consumption went from 356.5 MB to 347.3 MB.
+Total: 6.576700 ms (FindLiveObjects: 0.491800 ms CreateObjectMapping: 0.243500 ms MarkObjects: 3.663300 ms  DeleteObjects: 1.968900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
 AcceleratorClientConnectionCallback - disconnected - :0
+Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7755.
+Memory consumption went from 353.7 MB to 348.1 MB.
+Total: 6.303700 ms (FindLiveObjects: 0.412500 ms CreateObjectMapping: 0.101900 ms MarkObjects: 4.478500 ms  DeleteObjects: 1.107500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
 Begin MonoManager ReloadAssembly
 'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+[Licensing::Client] Successfully resolved entitlement details
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -813,31 +354,126 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.543 seconds
-Domain Reload Profiling: 1087ms
-	BeginReloadAssembly (186ms)
+- Finished resetting the current domain, in  0.529 seconds
+Domain Reload Profiling: 1086ms
+	BeginReloadAssembly (190ms)
 		DisableScriptedObjects (15ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (301ms)
+		LoadAssemblies (250ms)
+		TypeCache.Refresh (6ms)
+		AnalyzeDomain (6ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (529ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (182ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6841 unused Assets / (8.3 MB). Loaded Objects now: 7758.
+Memory consumption went from 361.2 MB to 352.9 MB.
+Total: 6.162300 ms (FindLiveObjects: 0.500000 ms CreateObjectMapping: 0.257300 ms MarkObjects: 3.495800 ms  DeleteObjects: 1.709300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7758.
+Memory consumption went from 358.5 MB to 352.9 MB.
+Total: 7.313500 ms (FindLiveObjects: 0.680200 ms CreateObjectMapping: 0.127800 ms MarkObjects: 5.249700 ms  DeleteObjects: 1.032600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6828 unused Assets / (8.9 MB). Loaded Objects now: 7758.
+Memory consumption went from 365.4 MB to 356.4 MB.
+Total: 7.517600 ms (FindLiveObjects: 0.589100 ms CreateObjectMapping: 0.268400 ms MarkObjects: 4.652300 ms  DeleteObjects: 1.793700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-10T16:09:29.7467602Z
+  Time since last request: 2782.48279920000004 seconds.
+  importAddress: GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: PreviewImporter
+Importing 'GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: ac2080d5af172c543bafab32b70fc7cb' -> (Import Result ID: '5d2a5cd7b4b06a9f83604bc30cb3267a') in 0.002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7292e8a90d9a0d9687cfead669e72912 DependenciesID=7d3cac83ddff7bea9ce03299dbf873e0 StaticDependenciesID=172eefc55e28ad3c8bcd4727c0d3f769 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+[Licensing::Client] Successfully resolved entitlement details
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.537 seconds
+Domain Reload Profiling: 1237ms
+	BeginReloadAssembly (191ms)
+		DisableScriptedObjects (16ms)
 		CreateAndSetChildDomain (37ms)
 	RebuildCommonClasses (7ms)
 	RebuildNativeTypeToScriptingClass (12ms)
 	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (295ms)
-		LoadAssemblies (241ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
+	LoadAllAssembliesAndSetupDomain (447ms)
+		LoadAssemblies (256ms)
+		TypeCache.Refresh (9ms)
+		AnalyzeDomain (139ms)
+			BuildScriptInfoCaches (134ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (544ms)
+	FinalizeReload (537ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (193ms)
-			ProcessInitializeOnLoadMethodAttributes (71ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (183ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
 			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
 Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.7 MB). Loaded Objects now: 7779.
-Memory consumption went from 420.3 MB to 411.6 MB.
-Total: 6.992400 ms (FindLiveObjects: 0.556300 ms CreateObjectMapping: 0.262200 ms MarkObjects: 3.845100 ms  DeleteObjects: 2.125100 ms)
+Unloading 6841 unused Assets / (8.9 MB). Loaded Objects now: 7761.
+Memory consumption went from 374.7 MB to 365.9 MB.
+Total: 6.737300 ms (FindLiveObjects: 0.617200 ms CreateObjectMapping: 0.262800 ms MarkObjects: 3.719900 ms  DeleteObjects: 1.922400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-10T16:11:15.5866856Z
+  Time since last request: 105.82316710000001 seconds.
+  importAddress: GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: ac2080d5af172c543bafab32b70fc7cb' -> (Import Result ID: 'e8b11316a2dee58927f88999ce62588d') in 0.058 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9ad089a1d406bb0fcaa2bc11ebf98ec4 DependenciesID=39faa4b9619dedd0487698751bafcd9f StaticDependenciesID=0bcade60b016024459648d8290edf95d 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6829 unused Assets / (8.7 MB). Loaded Objects now: 7762.
+Memory consumption went from 366.6 MB to 357.9 MB.
+Total: 7.663400 ms (FindLiveObjects: 1.195400 ms CreateObjectMapping: 0.346100 ms MarkObjects: 3.999500 ms  DeleteObjects: 1.909800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
@@ -856,94 +492,179 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.546 seconds
-Domain Reload Profiling: 1083ms
+- Finished resetting the current domain, in  0.563 seconds
+Domain Reload Profiling: 1265ms
 	BeginReloadAssembly (186ms)
 		DisableScriptedObjects (16ms)
-		CreateAndSetChildDomain (38ms)
+		CreateAndSetChildDomain (39ms)
 	RebuildCommonClasses (7ms)
 	RebuildNativeTypeToScriptingClass (12ms)
 	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (289ms)
-		LoadAssemblies (234ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
+	LoadAllAssembliesAndSetupDomain (454ms)
+		LoadAssemblies (249ms)
+		TypeCache.Refresh (10ms)
+		AnalyzeDomain (143ms)
+			BuildScriptInfoCaches (138ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (547ms)
+	FinalizeReload (564ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (78ms)
-			ProcessInitializeOnLoadAttributes (191ms)
-			ProcessInitializeOnLoadMethodAttributes (71ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (195ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
 			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
 Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.6 MB). Loaded Objects now: 7782.
-Memory consumption went from 424.9 MB to 416.3 MB.
-Total: 6.996500 ms (FindLiveObjects: 0.574400 ms CreateObjectMapping: 0.261700 ms MarkObjects: 3.755600 ms  DeleteObjects: 2.136500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.5 MB). Loaded Objects now: 7782.
-Memory consumption went from 422.2 MB to 416.7 MB.
-Total: 6.505400 ms (FindLiveObjects: 0.834900 ms CreateObjectMapping: 0.165600 ms MarkObjects: 4.244100 ms  DeleteObjects: 1.035400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.5 MB). Loaded Objects now: 7782.
-Memory consumption went from 424.2 MB to 418.7 MB.
-Total: 5.196500 ms (FindLiveObjects: 0.366000 ms CreateObjectMapping: 0.111200 ms MarkObjects: 3.493200 ms  DeleteObjects: 1.020500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.5 MB). Loaded Objects now: 7782.
-Memory consumption went from 426.1 MB to 420.7 MB.
-Total: 6.373200 ms (FindLiveObjects: 0.822400 ms CreateObjectMapping: 0.147100 ms MarkObjects: 3.575600 ms  DeleteObjects: 1.607900 ms)
+Unloading 6842 unused Assets / (9.0 MB). Loaded Objects now: 7765.
+Memory consumption went from 371.2 MB to 362.2 MB.
+Total: 6.254700 ms (FindLiveObjects: 0.506400 ms CreateObjectMapping: 0.246100 ms MarkObjects: 3.482100 ms  DeleteObjects: 1.809400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time of request: 2026-11-09T16:39:40.7421209Z
-  Time since last request: 4357.82023000000027 seconds.
-  importAddress: GUID: e73a58f6e2794ae7b1b7e50b7fb811b0 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat - Importer: PreviewImporter
-Importing 'GUID: e73a58f6e2794ae7b1b7e50b7fb811b0 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat - Importer: PreviewImporter' with importer (PreviewImporter)
-Imported 'GUID: e73a58f6e2794ae7b1b7e50b7fb811b0' -> (Import Result ID: '57c4cb36477c994f2c3a2723aeb34cca') in 0.390 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=36f5a8320399c0f9e46c423a2eb7301b DependenciesID=835b10070529e4205ec4e7ceb0f8c586 StaticDependenciesID=d0942cdc377008b7111875ba81f772c9 
+  Time of request: 2026-11-10T16:11:25.2341565Z
+  Time since last request: 9.5790542 seconds.
+  importAddress: GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/NewMonoBehaviourScript.cs - Importer: PreviewImporter
+Importing 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/NewMonoBehaviourScript.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785' -> (Import Result ID: '689a250fea5d27cf0de5f09f638d597e') in 0.001 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=538eda3ec0119bef5688cd40a4ccb02a DependenciesID=2dafbc747d2ce2ab4371273c6194d071 StaticDependenciesID=ad7f5def22c0450f7ccf37bfe6d579f9 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time of request: 2026-11-09T16:39:41.1447964Z
-  Time since last request: 0.0003697 seconds.
-  importAddress: GUID: 79459efec17a4d00a321bdcc27bbc385 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat - Importer: PreviewImporter
-Importing 'GUID: 79459efec17a4d00a321bdcc27bbc385 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat - Importer: PreviewImporter' with importer (PreviewImporter)
-Imported 'GUID: 79459efec17a4d00a321bdcc27bbc385' -> (Import Result ID: '3efb7c1b1b59bc209f12f9b68badc7a9') in 0.051 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fb0927117ba8b76594e838e7aed36139 DependenciesID=670b6129bef6c3d5cb8df8f560e18ede StaticDependenciesID=fc9629f01f55eb495942587f8f201ac6 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time of request: 2026-11-09T16:39:41.2064929Z
-  Time since last request: 0.0012439 seconds.
-  importAddress: GUID: 2e498d1c8094910479dc3e1b768306a4 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset - Importer: PreviewImporter
-Importing 'GUID: 2e498d1c8094910479dc3e1b768306a4 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset - Importer: PreviewImporter' with importer (PreviewImporter)
-Imported 'GUID: 2e498d1c8094910479dc3e1b768306a4' -> (Import Result ID: 'c3fd8c939465db025fb0ddec9e2da9f5') in 0.040 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=de3b9b5f3064ade73deacbd671395302 DependenciesID=3cae84ab11fc37240bc692d0edbce699 StaticDependenciesID=5d966b296043ce5727d4c426c36d789c 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 AcceleratorClientConnectionCallback - disconnected - :0
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7940.
-Memory consumption went from 395.2 MB to 389.7 MB.
-Total: 6.467700 ms (FindLiveObjects: 0.392400 ms CreateObjectMapping: 0.124800 ms MarkObjects: 4.668700 ms  DeleteObjects: 1.059700 ms)
+Unloading 6829 unused Assets / (9.6 MB). Loaded Objects now: 7765.
+Memory consumption went from 371.3 MB to 361.7 MB.
+Total: 7.864500 ms (FindLiveObjects: 1.236400 ms CreateObjectMapping: 0.385200 ms MarkObjects: 3.751800 ms  DeleteObjects: 2.267200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-10T16:11:33.1688985Z
+  Time since last request: 7.9248259 seconds.
+  importAddress: GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter
+Importing 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785' -> (Import Result ID: '4fc7833aa14783abe8c01d7be4873bac') in 0.001 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=538eda3ec0119bef5688cd40a4ccb02a DependenciesID=4c05a5e62e2a0de53a6402b4417d000b StaticDependenciesID=167095075207341b348e8b7924737657 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-10T16:11:33.1805977Z
+  Time since last request: 0.0016422 seconds.
+  importAddress: GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter
+Importing 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785' -> (Import Result ID: '4fc7833aa14783abe8c01d7be4873bac') in 0.001 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=538eda3ec0119bef5688cd40a4ccb02a DependenciesID=4c05a5e62e2a0de53a6402b4417d000b StaticDependenciesID=167095075207341b348e8b7924737657 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-10T16:11:33.1919008Z
+  Time since last request: 0.0007444 seconds.
+  importAddress: GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter
+Importing 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785' -> (Import Result ID: '4fc7833aa14783abe8c01d7be4873bac') in 0.000 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=538eda3ec0119bef5688cd40a4ccb02a DependenciesID=4c05a5e62e2a0de53a6402b4417d000b StaticDependenciesID=167095075207341b348e8b7924737657 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-10T16:11:33.2016576Z
+  Time since last request: 0.000353 seconds.
+  importAddress: GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter
+Importing 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785' -> (Import Result ID: '4fc7833aa14783abe8c01d7be4873bac') in 0.000 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=538eda3ec0119bef5688cd40a4ccb02a DependenciesID=4c05a5e62e2a0de53a6402b4417d000b StaticDependenciesID=167095075207341b348e8b7924737657 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-10T16:11:33.2106851Z
+  Time since last request: 0.0006804 seconds.
+  importAddress: GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter
+Importing 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785' -> (Import Result ID: '4fc7833aa14783abe8c01d7be4873bac') in 0.000 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=538eda3ec0119bef5688cd40a4ccb02a DependenciesID=4c05a5e62e2a0de53a6402b4417d000b StaticDependenciesID=167095075207341b348e8b7924737657 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-10T16:11:33.2198198Z
+  Time since last request: 0.0006396 seconds.
+  importAddress: GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter
+Importing 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785' -> (Import Result ID: '4fc7833aa14783abe8c01d7be4873bac') in 0.000 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=538eda3ec0119bef5688cd40a4ccb02a DependenciesID=4c05a5e62e2a0de53a6402b4417d000b StaticDependenciesID=167095075207341b348e8b7924737657 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-10T16:11:33.2310998Z
+  Time since last request: 0.0014537 seconds.
+  importAddress: GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter
+Importing 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785' -> (Import Result ID: '4fc7833aa14783abe8c01d7be4873bac') in 0.000 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=538eda3ec0119bef5688cd40a4ccb02a DependenciesID=4c05a5e62e2a0de53a6402b4417d000b StaticDependenciesID=167095075207341b348e8b7924737657 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.564 seconds
+Domain Reload Profiling: 1260ms
+	BeginReloadAssembly (194ms)
+		DisableScriptedObjects (18ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (441ms)
+		LoadAssemblies (240ms)
+		TypeCache.Refresh (9ms)
+		AnalyzeDomain (141ms)
+			BuildScriptInfoCaches (136ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (565ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (190ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6842 unused Assets / (9.0 MB). Loaded Objects now: 7768.
+Memory consumption went from 372.4 MB to 363.4 MB.
+Total: 6.386200 ms (FindLiveObjects: 0.528600 ms CreateObjectMapping: 0.254100 ms MarkObjects: 3.561400 ms  DeleteObjects: 1.833500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-10T16:11:38.8669458Z
+  Time since last request: 5.6266566 seconds.
+  importAddress: GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter
+Importing 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785 - Path: Assets/Script/ListaJugadores.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 31dadd3ef3ceb4e45b6472f547b6e785' -> (Import Result ID: '4908b1579a63560fe133cb7074b8b0b2') in 0.001 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=538eda3ec0119bef5688cd40a4ccb02a DependenciesID=e9adcbd6ba36788275dacb6a7a0ca4ff StaticDependenciesID=167095075207341b348e8b7924737657 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6829 unused Assets / (8.9 MB). Loaded Objects now: 7768.
+Memory consumption went from 374.5 MB to 365.7 MB.
+Total: 6.526700 ms (FindLiveObjects: 0.532100 ms CreateObjectMapping: 0.245800 ms MarkObjects: 3.761400 ms  DeleteObjects: 1.776600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
@@ -965,463 +686,40 @@ Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Scripting: successfully reloaded assembly
 - Finished resetting the current domain, in  0.540 seconds
-Domain Reload Profiling: 1112ms
-	BeginReloadAssembly (204ms)
-		DisableScriptedObjects (25ms)
-		CreateAndSetChildDomain (46ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (303ms)
-		LoadAssemblies (252ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (540ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (75ms)
-			ProcessInitializeOnLoadAttributes (190ms)
-			ProcessInitializeOnLoadMethodAttributes (70ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.3 MB). Loaded Objects now: 7851.
-Memory consumption went from 399.0 MB to 390.7 MB.
-Total: 6.299100 ms (FindLiveObjects: 0.513500 ms CreateObjectMapping: 0.250400 ms MarkObjects: 3.580800 ms  DeleteObjects: 1.749500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.538 seconds
-Domain Reload Profiling: 1103ms
-	BeginReloadAssembly (197ms)
-		DisableScriptedObjects (17ms)
-		CreateAndSetChildDomain (40ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (303ms)
-		LoadAssemblies (254ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (539ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (186ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.8 MB). Loaded Objects now: 7854.
-Memory consumption went from 401.4 MB to 392.6 MB.
-Total: 6.344800 ms (FindLiveObjects: 0.527000 ms CreateObjectMapping: 0.240800 ms MarkObjects: 3.648100 ms  DeleteObjects: 1.724800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.5 MB). Loaded Objects now: 7854.
-Memory consumption went from 399.0 MB to 393.5 MB.
-Total: 6.342400 ms (FindLiveObjects: 0.829500 ms CreateObjectMapping: 0.152000 ms MarkObjects: 3.991800 ms  DeleteObjects: 1.147500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.5 MB). Loaded Objects now: 7854.
-Memory consumption went from 401.3 MB to 395.8 MB.
-Total: 5.454400 ms (FindLiveObjects: 0.407600 ms CreateObjectMapping: 0.112600 ms MarkObjects: 3.668300 ms  DeleteObjects: 1.047600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.549 seconds
-Domain Reload Profiling: 1110ms
-	BeginReloadAssembly (196ms)
-		DisableScriptedObjects (17ms)
-		CreateAndSetChildDomain (40ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (295ms)
-		LoadAssemblies (248ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (550ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (189ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.6 MB). Loaded Objects now: 7857.
-Memory consumption went from 408.4 MB to 399.8 MB.
-Total: 8.075300 ms (FindLiveObjects: 1.282100 ms CreateObjectMapping: 0.372500 ms MarkObjects: 4.186600 ms  DeleteObjects: 2.018400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.541 seconds
-Domain Reload Profiling: 1085ms
-	BeginReloadAssembly (191ms)
+Domain Reload Profiling: 1230ms
+	BeginReloadAssembly (198ms)
 		DisableScriptedObjects (16ms)
-		CreateAndSetChildDomain (40ms)
+		CreateAndSetChildDomain (43ms)
 	RebuildCommonClasses (7ms)
 	RebuildNativeTypeToScriptingClass (12ms)
 	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (290ms)
-		LoadAssemblies (237ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (542ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (78ms)
-			ProcessInitializeOnLoadAttributes (191ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.7 MB). Loaded Objects now: 7860.
-Memory consumption went from 412.6 MB to 403.9 MB.
-Total: 6.199800 ms (FindLiveObjects: 0.499700 ms CreateObjectMapping: 0.249800 ms MarkObjects: 3.476600 ms  DeleteObjects: 1.767800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.537 seconds
-Domain Reload Profiling: 1088ms
-	BeginReloadAssembly (191ms)
-		DisableScriptedObjects (15ms)
-		CreateAndSetChildDomain (39ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (294ms)
-		LoadAssemblies (248ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (538ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (188ms)
-			ProcessInitializeOnLoadMethodAttributes (70ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (7.9 MB). Loaded Objects now: 7863.
-Memory consumption went from 416.9 MB to 409.0 MB.
-Total: 6.642000 ms (FindLiveObjects: 0.577300 ms CreateObjectMapping: 0.265100 ms MarkObjects: 3.715000 ms  DeleteObjects: 1.870700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.552 seconds
-Domain Reload Profiling: 1107ms
-	BeginReloadAssembly (191ms)
-		DisableScriptedObjects (15ms)
-		CreateAndSetChildDomain (40ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (300ms)
-		LoadAssemblies (247ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (552ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			BeforeProcessingInitializeOnLoad (80ms)
-			ProcessInitializeOnLoadAttributes (194ms)
-			ProcessInitializeOnLoadMethodAttributes (71ms)
-			AfterProcessingInitializeOnLoad (5ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (7.4 MB). Loaded Objects now: 7866.
-Memory consumption went from 422.1 MB to 414.7 MB.
-Total: 7.259600 ms (FindLiveObjects: 0.759500 ms CreateObjectMapping: 0.456700 ms MarkObjects: 3.699300 ms  DeleteObjects: 2.130700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.538 seconds
-Domain Reload Profiling: 1084ms
-	BeginReloadAssembly (190ms)
-		DisableScriptedObjects (16ms)
-		CreateAndSetChildDomain (39ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (293ms)
-		LoadAssemblies (244ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (538ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			BeforeProcessingInitializeOnLoad (78ms)
-			ProcessInitializeOnLoadAttributes (190ms)
-			ProcessInitializeOnLoadMethodAttributes (69ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.1 MB). Loaded Objects now: 7869.
-Memory consumption went from 426.9 MB to 418.8 MB.
-Total: 6.247100 ms (FindLiveObjects: 0.523000 ms CreateObjectMapping: 0.238700 ms MarkObjects: 3.531800 ms  DeleteObjects: 1.739200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6828 unused Assets / (8.0 MB). Loaded Objects now: 7869.
-Memory consumption went from 429.3 MB to 421.3 MB.
-Total: 8.080700 ms (FindLiveObjects: 0.660900 ms CreateObjectMapping: 0.280200 ms MarkObjects: 5.158600 ms  DeleteObjects: 1.769000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time of request: 2026-11-09T17:02:16.7158408Z
-  Time since last request: 1355.48720389999994 seconds.
-  importAddress: GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: PreviewImporter
-Importing 'GUID: ac2080d5af172c543bafab32b70fc7cb - Path: Assets/Script/GestorSala.cs - Importer: PreviewImporter' with importer (PreviewImporter)
-Imported 'GUID: ac2080d5af172c543bafab32b70fc7cb' -> (Import Result ID: '2e8e3f21b0ae50ed30919c06d2034e5d') in 0.003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7292e8a90d9a0d9687cfead669e72912 DependenciesID=b84c47fc21167bf38ff3a28c61a48a70 StaticDependenciesID=e4f7343ab81b3c3e0f6a0e09d431b18f 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.553 seconds
-Domain Reload Profiling: 1263ms
-	BeginReloadAssembly (197ms)
-		DisableScriptedObjects (16ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (8ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (443ms)
-		LoadAssemblies (253ms)
+	LoadAllAssembliesAndSetupDomain (430ms)
+		LoadAssemblies (238ms)
 		TypeCache.Refresh (10ms)
 		AnalyzeDomain (141ms)
-			BuildScriptInfoCaches (136ms)
+			BuildScriptInfoCaches (135ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (554ms)
+	FinalizeReload (540ms)
 		SetupLoadedEditorAssemblies (0ms)
 			InitializePlatformSupportModulesInManaged (6ms)
-			BeforeProcessingInitializeOnLoad (84ms)
-			ProcessInitializeOnLoadAttributes (188ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
-			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (8.7 MB). Loaded Objects now: 7872.
-Memory consumption went from 443.7 MB to 435.0 MB.
-Total: 6.865500 ms (FindLiveObjects: 0.834000 ms CreateObjectMapping: 0.232600 ms MarkObjects: 3.738500 ms  DeleteObjects: 1.845800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7872.
-Memory consumption went from 441.3 MB to 435.6 MB.
-Total: 6.137500 ms (FindLiveObjects: 0.898800 ms CreateObjectMapping: 0.179600 ms MarkObjects: 3.744100 ms  DeleteObjects: 1.084500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.5 MB). Loaded Objects now: 7872.
-Memory consumption went from 443.5 MB to 438.1 MB.
-Total: 5.662200 ms (FindLiveObjects: 0.818900 ms CreateObjectMapping: 0.161500 ms MarkObjects: 3.498100 ms  DeleteObjects: 0.974700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7872.
-Memory consumption went from 445.8 MB to 440.3 MB.
-Total: 5.456800 ms (FindLiveObjects: 0.382500 ms CreateObjectMapping: 0.106800 ms MarkObjects: 3.513000 ms  DeleteObjects: 1.247800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-[Licensing::Client] Successfully resolved entitlement details
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.552 seconds
-Domain Reload Profiling: 1098ms
-	BeginReloadAssembly (193ms)
-		DisableScriptedObjects (16ms)
-		CreateAndSetChildDomain (40ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (288ms)
-		LoadAssemblies (241ms)
-		TypeCache.Refresh (6ms)
-		AnalyzeDomain (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (553ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			BeforeProcessingInitializeOnLoad (82ms)
-			ProcessInitializeOnLoadAttributes (190ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (182ms)
 			ProcessInitializeOnLoadMethodAttributes (70ms)
 			AfterProcessingInitializeOnLoad (4ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
 Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6841 unused Assets / (9.1 MB). Loaded Objects now: 7875.
-Memory consumption went from 454.0 MB to 444.9 MB.
-Total: 7.755700 ms (FindLiveObjects: 1.263200 ms CreateObjectMapping: 0.452100 ms MarkObjects: 3.770200 ms  DeleteObjects: 2.050500 ms)
+Unloading 6842 unused Assets / (8.2 MB). Loaded Objects now: 7771.
+Memory consumption went from 379.6 MB to 371.4 MB.
+Total: 7.044700 ms (FindLiveObjects: 1.264600 ms CreateObjectMapping: 0.366900 ms MarkObjects: 3.446200 ms  DeleteObjects: 1.749700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
 AcceleratorClientConnectionCallback - disconnected - :0
 Unloading 61 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (5.6 MB). Loaded Objects now: 7875.
-Memory consumption went from 451.6 MB to 446.0 MB.
-Total: 6.592600 ms (FindLiveObjects: 0.826200 ms CreateObjectMapping: 0.136900 ms MarkObjects: 4.401500 ms  DeleteObjects: 1.014700 ms)
+Unloading 62 unused Assets / (5.7 MB). Loaded Objects now: 7771.
+Memory consumption went from 376.9 MB to 371.1 MB.
+Total: 5.301400 ms (FindLiveObjects: 0.353400 ms CreateObjectMapping: 0.121700 ms MarkObjects: 3.527300 ms  DeleteObjects: 1.010500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 Editor requested this worker to shutdown with reason: Editor is closing down

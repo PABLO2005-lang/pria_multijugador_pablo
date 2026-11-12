@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.UI;   // Button
 using Photon.Pun;
@@ -13,21 +14,22 @@ public class GestorSala : MonoBehaviourPunCallbacks
 
     [Header("Lobby")]
     [SerializeField] private TMP_InputField nombreSalaInput;
+    [SerializeField] private TMP_InputField nombreJugadorInput; // G05
     [SerializeField] private TMP_Text mensajeLobbyText;
     [SerializeField] private Button[] botonesLobby;
 
     [Header("Sala")]
     [SerializeField] private TMP_Text infoSalaText;
+
     private const int MaxJugadores = 4;
 
     private void Start()
     {
         panelLobby.SetActive(true);
         panelSala.SetActive(false);
-        ActivarBotones(false);              // Desactivados hasta estar conectados
+        ActivarBotones(false);
         mensajeLobbyText.text = "Conectando con Photon...";
 
-        // Nos conectamos a los servidores de Photon usando la configuración del archivo PhotonServerSettings
         if (!PhotonNetwork.IsConnected)
         {
             PhotonNetwork.ConnectUsingSettings();
@@ -40,46 +42,69 @@ public class GestorSala : MonoBehaviourPunCallbacks
     {
         Debug.Log("Conectado al servidor de Photon.");
         mensajeLobbyText.text = "Conectado. Escribe una sala o búscala.";
-        ActivarBotones(true); // ¡Aquí es donde se activan los botones al fin!
+        ActivarBotones(true);
 
-        // Opcional: unirse al lobby por defecto si quieres usar salas aleatorias (JoinRandomRoom)
         PhotonNetwork.JoinLobby();
     }
 
-    // ---------- Métodos de los Botones (Acciones) ----------
+    // ---------- Métodos de los Botones ----------
 
     public void CrearSala()
     {
+        PonerNombre(); // G05
+
         string nombre = nombreSalaInput.text.Trim();
+
         if (nombre.Length == 0)
         {
             mensajeLobbyText.text = "Escribe un nombre para la sala.";
             return;
         }
+
         ActivarBotones(false);
+
         mensajeLobbyText.text = "Creando la sala " + nombre + "...";
-        RoomOptions opciones = new RoomOptions { MaxPlayers = MaxJugadores };
+
+        RoomOptions opciones = new RoomOptions
+        {
+            MaxPlayers = MaxJugadores
+        };
+
         PhotonNetwork.CreateRoom(nombre, opciones);
     }
 
     public void UnirseSala()
     {
+        PonerNombre(); // G05
+
         string nombre = nombreSalaInput.text.Trim();
+
         if (nombre.Length == 0)
         {
             mensajeLobbyText.text = "Escribe el nombre de la sala.";
             return;
         }
+
         ActivarBotones(false);
+
         mensajeLobbyText.text = "Entrando en " + nombre + "...";
         PhotonNetwork.JoinRoom(nombre);
     }
 
     public void UnirseAleatoria()
     {
+        PonerNombre(); // G05
         ActivarBotones(false);
+
         mensajeLobbyText.text = "Buscando una sala libre...";
         PhotonNetwork.JoinRandomRoom();
+    }
+
+    // ---------- Salir de la sala (G05) ----------
+
+    public void SalirSala()
+    {
+        PhotonNetwork.LeaveRoom();
     }
 
     // ---------- Callbacks de salas ----------
@@ -89,7 +114,15 @@ public class GestorSala : MonoBehaviourPunCallbacks
         panelLobby.SetActive(false);
         panelSala.SetActive(true);
         ActualizarInfoSala();
+
         Debug.Log("Dentro de la sala " + PhotonNetwork.CurrentRoom.Name);
+    }
+
+    public override void OnLeftRoom()
+    {
+        panelSala.SetActive(false);
+        panelLobby.SetActive(true);
+        mensajeLobbyText.text = "Has salido de la sala.";
     }
 
     public override void OnCreateRoomFailed(short codigo, string mensaje)
@@ -106,9 +139,12 @@ public class GestorSala : MonoBehaviourPunCallbacks
 
     public override void OnJoinRandomFailed(short codigo, string mensaje)
     {
-        // No hay ninguna sala libre: creamos una con nombre automático.
         mensajeLobbyText.text = "No hay salas libres. Creando una nueva...";
-        PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = MaxJugadores });
+
+        PhotonNetwork.CreateRoom(null, new RoomOptions
+        {
+            MaxPlayers = MaxJugadores
+        });
     }
 
     public override void OnPlayerEnteredRoom(Player nuevoJugador)
@@ -123,13 +159,25 @@ public class GestorSala : MonoBehaviourPunCallbacks
 
     // ---------- Ayudantes ----------
 
+    private void PonerNombre() // G05
+    {
+        string nombre = nombreJugadorInput.text.Trim();
+
+        if (nombre.Length > 0)
+        {
+            PhotonNetwork.NickName = nombre;
+        }
+    }
+
     private void ActualizarInfoSala()
     {
         Room sala = PhotonNetwork.CurrentRoom;
+
         if (sala != null)
         {
             infoSalaText.text = "Sala: " + sala.Name
-                              + " · Jugadores: " + sala.PlayerCount + "/" + sala.MaxPlayers;
+                              + " · Jugadores: " + sala.PlayerCount
+                              + "/" + sala.MaxPlayers;
         }
     }
 
