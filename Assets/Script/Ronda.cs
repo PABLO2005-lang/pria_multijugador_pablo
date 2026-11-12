@@ -8,29 +8,33 @@ using TMPro;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 // Minijuego de reflejos.
-// El anfitrión controla la ronda y todos utilizan
-// el reloj del servidor de Photon.
+// El cliente predice su tiempo y el anfitrión decide el ganador.
 
 public class Ronda : MonoBehaviourPun, IOnEventCallback
 {
     [SerializeField] private Button botonEmpezar;
     [SerializeField] private Button botonPulsar;
     [SerializeField] private TMP_Text rondaText;
+    [SerializeField] private TMP_Text latenciaText;
 
-    // Código del evento de inicio.
+    // Evento de inicio.
     private const byte EventoInicioRonda = 1;
 
-    // Estado que controla el anfitrión.
+    // Estado del anfitrión.
     private bool rondaActiva;
     private bool hayGanador;
     private int numeroRonda;
 
-    // Estado compartido de la ronda.
+    // Estado de la ronda.
     private double horaYa;
     private bool esperandoYa;
 
-    // ---------------- EVENTOS ----------------
+    // Modelo cliente G10.
+    private bool pendiente;
+    private int miPrediccion;
+    private float proximaMedida;
 
+    // Registrar eventos.
     private void OnEnable()
     {
         PhotonNetwork.AddCallbackTarget(this);
@@ -56,31 +60,41 @@ public class Ronda : MonoBehaviourPun, IOnEventCallback
             PhotonNetwork.InRoom &&
             PhotonNetwork.IsMasterClient;
 
-        // Todos utilizan el reloj de Photon.
+        // Comprobar el reloj del servidor.
         if (esperandoYa && PhotonNetwork.Time >= horaYa)
         {
             esperandoYa = false;
-
             rondaText.text = "¡YA! Pulsa el botón";
+        }
+
+        // Medir el ping cada medio segundo.
+        if (Time.time >= proximaMedida)
+        {
+            proximaMedida = Time.time + 0.5f;
+
+            if (PhotonNetwork.InRoom)
+            {
+                latenciaText.text =
+                    "Ping: " + PhotonNetwork.GetPing() + " ms";
+            }
         }
     }
 
     // ---------------- ANFITRIÓN ----------------
 
-    // Botón Empezar ronda.
     public void Empezar()
     {
         if (!PhotonNetwork.IsMasterClient) return;
+        if (!PhotonNetwork.InRoom) return;
 
         numeroRonda++;
 
         rondaActiva = true;
         hayGanador = false;
 
-        // El inicio será entre 2 y 5 segundos después.
-        horaYa = PhotonNetwork.Time + Random.Range(2f, 5f);
+        horaYa =
+            PhotonNetwork.Time + Random.Range(2f, 5f);
 
-        // Datos que enviamos a todos.
         object[] datos = { numeroRonda, horaYa };
 
         RaiseEventOptions opciones =
@@ -89,7 +103,6 @@ public class Ronda : MonoBehaviourPun, IOnEventCallback
                 Receivers = ReceiverGroup.All
             };
 
-        // Evento de inicio de ronda.
         PhotonNetwork.RaiseEvent(
             EventoInicioRonda,
             datos,
@@ -99,16 +112,14 @@ public class Ronda : MonoBehaviourPun, IOnEventCallback
     }
 
     // Cliente -> anfitrión.
-    // Recibe la pulsación del jugador.
     [PunRPC]
     private void CmdPulsar(PhotonMessageInfo info)
     {
         if (!PhotonNetwork.IsMasterClient) return;
 
-        // Comprobar que la ronda está abierta.
         if (!rondaActiva || hayGanador) return;
 
-        // Comprobar si ha pulsado antes de tiempo.
+        // Detectar falsa salida.
         if (info.SentServerTime < horaYa)
         {
             photonView.RPC(
@@ -119,27 +130,25 @@ public class Ronda : MonoBehaviourPun, IOnEventCallback
             return;
         }
 
-        // Ya tenemos ganador.
         hayGanador = true;
         rondaActiva = false;
 
-        // Sumar un punto al ganador.
         SumarPunto(info.Sender);
 
-        // Calcular tiempo de reacción.
         int milisegundos =
             (int)((info.SentServerTime - horaYa) * 1000);
 
-        // Anunciar ganador a todos.
+        // Anunciar el ganador a todos.
         photonView.RPC(
             nameof(RpcAnunciarGanador),
             RpcTarget.All,
+            info.Sender.ActorNumber,
             info.Sender.NickName,
             milisegundos
         );
     }
 
-    // Sumar puntos al jugador.
+    // Sumar punto al ganador.
     private void SumarPunto(Player jugador)
     {
         int puntos = 0;
@@ -159,12 +168,11 @@ public class Ronda : MonoBehaviourPun, IOnEventCallback
 
     // ---------------- TODOS LOS JUGADORES ----------------
 
-    // Recibir el evento de inicio.
     public void OnEvent(EventData evento)
     {
         if (evento.Code != EventoInicioRonda) return;
 
-        // Solo aceptar eventos enviados por el anfitrión.
+        // Comprobar que lo envía el anfitrión actual.
         if (PhotonNetwork.MasterClient == null ||
             evento.Sender != PhotonNetwork.MasterClient.ActorNumber)
             return;
@@ -176,6 +184,7 @@ public class Ronda : MonoBehaviourPun, IOnEventCallback
         horaYa = (double)datos[1];
 
         esperandoYa = true;
+        pendiente = false;
 
         botonPulsar.interactable = true;
 
@@ -186,36 +195,79 @@ public class Ronda : MonoBehaviourPun, IOnEventCallback
     // Botón ¡PULSA!
     public void Pulsar()
     {
-        // Un solo intento por ronda.
+        if (!botonPulsar.interactable) return;
+        if (!PhotonNetwork.InRoom) return;
+
         botonPulsar.interactable = false;
 
-        // Enviar comando al anfitrión.
+        // PREDICCIÓN: calcular inmediatamente el tiempo.
+        pendiente = true;
+
+        miPrediccion =
+            (int)((PhotonNetwork.Time - horaYa) * 1000);
+
+        if (miPrediccion < 0)
+        {
+            rondaText.text =
+                "Parece una falsa salida... (pendiente de confirmar)";
+        }
+        else
+        {
+            rondaText.text =
+                "Has pulsado en " + miPrediccion +
+                " ms. Esperando al anfitrión...";
+        }
+
+        // Enviar el comando al final.
         photonView.RPC(
             nameof(CmdPulsar),
             RpcTarget.MasterClient
         );
     }
 
-    // Avisar de una falsa salida.
+    // Falsa salida.
     [PunRPC]
     private void RpcFalsaSalida()
     {
+        pendiente = false;
+
         rondaText.text =
-            "¡Falsa salida! Has pulsado antes de tiempo";
+            "Confirmado: ¡falsa salida! Has pulsado antes de tiempo";
     }
 
-    // Anunciar ganador a todos.
+    // RECONCILIACIÓN: el anfitrión confirma el resultado.
     [PunRPC]
     private void RpcAnunciarGanador(
+        int actorGanador,
         string nombre,
         int milisegundos)
     {
         esperandoYa = false;
 
-        rondaText.text =
-            "Gana " + nombre + " en " +
-            milisegundos + " ms";
-
         botonPulsar.interactable = false;
+
+        if (actorGanador ==
+            PhotonNetwork.LocalPlayer.ActorNumber)
+        {
+            rondaText.text =
+                "Confirmado: ¡has ganado! (" +
+                milisegundos + " ms)";
+        }
+        else if (pendiente)
+        {
+            rondaText.text =
+                "Pulsaste en " + miPrediccion +
+                " ms, pero " + nombre +
+                " fue más rápido (" +
+                milisegundos + " ms)";
+        }
+        else
+        {
+            rondaText.text =
+                "Gana " + nombre +
+                " en " + milisegundos + " ms";
+        }
+
+        pendiente = false;
     }
 }
