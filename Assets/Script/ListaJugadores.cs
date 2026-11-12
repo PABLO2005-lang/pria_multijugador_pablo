@@ -4,7 +4,8 @@ using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
 
-// Muestra quién está en la sala y avisa de las entradas y salidas.
+// Muestra quién está en la sala, sus puntos
+// y avisa de las entradas y salidas.
 public class ListaJugadores : MonoBehaviourPunCallbacks
 {
     [SerializeField] private TMP_Text jugadoresText;
@@ -34,6 +35,14 @@ public class ListaJugadores : MonoBehaviourPunCallbacks
         Refrescar();
     }
 
+    // Se ejecuta cuando cambian las propiedades de un jugador.
+    public override void OnPlayerPropertiesUpdate(
+        Player jugador,
+        ExitGames.Client.Photon.Hashtable propiedades)
+    {
+        Refrescar();
+    }
+
     private void Refrescar()
     {
         string texto = "";
@@ -55,6 +64,13 @@ public class ListaJugadores : MonoBehaviourPunCallbacks
 
         if (jugador.IsLocal)
             linea += "  (tú)";
+
+        // G08: mostrar los puntos del jugador.
+        if (jugador.CustomProperties.TryGetValue(
+            "puntos", out object puntos))
+        {
+            linea += "  · " + (int)puntos + " pts";
+        }
 
         return linea;
     }

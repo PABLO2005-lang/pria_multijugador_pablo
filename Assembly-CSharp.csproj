@@ -65,6 +65,7 @@
     <Compile Include="Assets\Script\ListaJugadores.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Demo Chat\Code\Utilities\ChatIdCheckerUI.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Demo Chat\Code\Utilities\DestroyOnStart.cs" />
+    <Compile Include="Assets\Script\Ronda.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Demo Chat\Code\FriendItem.cs" />
     <Compile Include="Assets\Script\MensajeChat.cs" />
     <Compile Include="Assets\Script\GestorSala.cs" />
