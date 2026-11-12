@@ -1,19 +1,34 @@
 
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Photon.Pun;
+using ExitGames.Client.Photon;
 using TMPro;
 
-// Chat de la sala. Necesita un PhotonView.
+// Chat de la sala.
 public class Chat : MonoBehaviourPun
 {
     [SerializeField] private TMP_InputField mensajeInput;
     [SerializeField] private TMP_Text chatText;
+    [SerializeField] private Toggle importanteToggle;
 
     private const int MaxLineas = 8;
     private readonly List<string> lineas = new List<string>();
 
-    // Botón Enviar
+    // Registrar el tipo de dato en Photon.
+    private void Awake()
+    {
+        PhotonPeer.RegisterType(
+            typeof(MensajeChat),
+            255,
+            MensajeChat.Serializar,
+            MensajeChat.Deserializar
+        );
+    }
+
+    // Botón Enviar.
     public void Enviar()
     {
         string texto = mensajeInput.text.Trim();
@@ -21,22 +36,40 @@ public class Chat : MonoBehaviourPun
         if (texto.Length == 0 || !PhotonNetwork.InRoom)
             return;
 
-        // Enviar el mensaje a todos los jugadores.
+        // Crear el mensaje.
+        MensajeChat mensaje = new MensajeChat();
+
+        mensaje.Texto = texto;
+        mensaje.Hora = DateTime.Now.ToString("HH:mm");
+        mensaje.Importante = importanteToggle.isOn;
+
+        // Enviar a todos los jugadores.
         photonView.RPC(
             nameof(RecibirMensaje),
             RpcTarget.All,
-            texto
+            mensaje
         );
 
         mensajeInput.text = "";
         mensajeInput.ActivateInputField();
     }
 
-    // Método que ejecutarán todos los jugadores.
+    // Recibir el mensaje de Photon.
     [PunRPC]
-    private void RecibirMensaje(string texto, PhotonMessageInfo info)
+    private void RecibirMensaje(
+        MensajeChat mensaje,
+        PhotonMessageInfo info)
     {
-        Escribir(info.Sender.NickName + ": " + texto);
+        string linea = "[" + mensaje.Hora + "] "
+            + info.Sender.NickName + ": "
+            + mensaje.Texto;
+
+        if (mensaje.Importante)
+        {
+            linea = "<b>" + linea + "</b>";
+        }
+
+        Escribir(linea);
     }
 
     private void Escribir(string linea)
