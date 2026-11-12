@@ -44,6 +44,7 @@ MonoBehaviour:
   - CmdPulsar
   - RpcAnunciarGanador
   - RpcRondaEmpieza
+  - RpcFalsaSalida
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0
