@@ -10,6 +10,7 @@
 
 [Ll]# Archivos temporales
 [Ll].vs/
+.vs/
 [Ll].idea/
 [Ll].vscode/
 
