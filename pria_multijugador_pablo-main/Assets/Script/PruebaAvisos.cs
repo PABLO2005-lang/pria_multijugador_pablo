@@ -5,6 +5,8 @@ using Photon.Realtime;
 
 public class PruebaAvisos : MonoBehaviour
 {
+
+
     public AvisosRPC avisos;
 
     public void EnviarAvisoTodos()
