@@ -1,0 +1,29 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Uu]Recordings/
+
+[Ll]# Archivos temporales
+[Ll].vs/
+.vs/
+[Ll].idea/
+[Ll].vscode/
+
+[Ll]# Archivos del sistema
+[Ll].DS_Store
+[Ll]Thumbs.db
+
+[Ll]# Archivos temporales de Unity
+[Ll]*.csproj
+[Ll]*.sln
+[Ll]*.user
+[Ll]*.pidb
+[Ll]*.booproj
+[Ll]*.svd
+[Ll]*.pdb
+[Ll]*.mdb
