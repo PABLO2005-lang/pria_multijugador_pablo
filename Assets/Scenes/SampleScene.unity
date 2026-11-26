@@ -1820,6 +1820,7 @@ MonoBehaviour:
   rondaText: {fileID: 1081499304}
   latenciaText: {fileID: 1595459581}
   chat: {fileID: 1034267770}
+<<<<<<< HEAD
 --- !u!1 &581368835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,6 +1950,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> e2ebb0ea734328e36c4964b623b2ffef438b3ff1
 --- !u!1 &627410821
 GameObject:
   m_ObjectHideFlags: 0
@@ -6703,4 +6706,7 @@ SceneRoots:
   - {fileID: 675886936}
   - {fileID: 1034267769}
   - {fileID: 561487984}
+<<<<<<< HEAD
   - {fileID: 581368837}
+=======
+>>>>>>> e2ebb0ea734328e36c4964b623b2ffef438b3ff1
